@@ -4,6 +4,7 @@ import "./globals.css";
 import AnnouncementBanner from "@/components/custom/announcement-banner";
 import Navbar from "@/components/custom/navbar";
 import { Suspense } from "react";
+import Footer from "@/components/footer/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,8 @@ export default function RootLayout({
           <Navbar />
         </Suspense>
         {children}
+
+        <Footer />
       </body>
     </html>
   );
